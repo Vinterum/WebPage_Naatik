@@ -1,0 +1,335 @@
+@font-face {
+    font-family: "minicart";
+    src: url(minicart-font.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+div.navbar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+div.navbar a {float: left;}
+
+div.navbar a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+div.navbar a.navbar-logo {
+  padding: 8px 42px 8px 38px;
+}
+
+div.navbar a.corner {padding-right: 38px;}
+
+div.navbar a:hover {color: #00aeef;}
+div.footer-container a:hover {color: #00aeef;}
+div.bottom-footer a:hover {color: #00aeef;}
+
+div.navbar a.push {margin-left: auto;}
+
+.fa-brands {font-size: 24px;}
+
+@media screen and (max-width: 700px) {
+  div.navbar a.right {
+  clip-path: inset(100%);
+  position: absolute;
+  }
+}
+
+.header {
+  position: relative;
+  /* Set a specific height */
+  min-height: 450px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 50% 120%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.footer {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1920px;
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+.footer-container {
+    padding: 45px 64px;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 740px){
+.footer-container {
+    flex-direction: column;
+    justify-content: space-between!important;
+    align-items:center!important;
+  }
+}
+
+.footer-container>div{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    float: left;
+    padding: 0 0 16px 0;
+    margin-bottom: 0!important;
+    display: inline-block;
+}
+
+@media (max-width: 1023px){
+.block-logo {
+    width: 100%;
+  }
+}
+
+.naatik {
+  width: 200px;
+}
+
+.mapa-sitio{
+  width: 20%!important;
+  float: left!important;
+  padding-top: 25px!important;
+}
+
+@media (max-width: 740px){
+.mapa-sitio ul {
+    padding-inline-start: 0px!important;
+  }
+}
+
+.mapa{
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+  padding: 4px 0;
+}
+
+.menu-item {
+  font-size: 24px;
+  color: white;
+}
+
+.menu-item, .inline-menu-item a:link {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 1024px) {
+.footer-container {
+    padding: 20px 64px 0 0!important;
+  }
+}
+
+.footer h2 {
+    font-size: 24px!important;
+    margin-bottom: 0;
+    margin-top: 22px;
+}
+
+.menu-item a:link {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 740px){
+  .redes-sociales {
+    padding-left: 0px;
+  }
+}
+
+.redes-sociales {
+  padding-top: 25px;
+  color: white;
+}
+
+.inline-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .menu-social {
+    margin-bottom: 16px;
+  }
+}
+
+.menu-social {
+  text-align: center;
+}
+
+.menu-social ul li {
+  display: inline-block;
+  margin:0 10px;
+}
+
+.menu-social li a {
+  font-size: 34px;
+  margin: 8px;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.footer-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (min-width: 1024px) {
+  redessociales {
+    padding: 0;
+  }
+}
+
+@media (min-width: 700px) {
+.menu-item {
+    padding: 0 0 16px 0;
+  }
+}
+
+@media (max-width: 740px){
+  div .block-chat {
+    padding-top: 16px!important;
+  }
+}
+
+.block-chat {
+  padding-top: 45px!important;
+}
+
+.footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.70);
+  border-top: solid 2px white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+.bottom-footer {
+    padding: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+.bottom-footer {
+    padding: 32px 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+.bottom-footer {
+    padding: 25px;
+  }
+}
+
+.bottom-footer>div, .bottom-footer>nav {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.bottom-footer>nav li {
+    margin: 0;
+}
+
+a:visited {
+  color: white;
+}
+
+.inline-menu-item {
+    margin: 10px 5px;
+    display: inline;
+}
+
+.bottom-footer>nav li:not(:last-child):after {
+    content: "|";
+}
+
+
+/* Privacidad */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Comfortaa", sans-serif;
+  background-color: #34495e;
+  color: #fff;
+}
+
+h1 {
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+    padding-top: 2%;
+    margin: 2px;
+    font-size: 30px;
+  }
+
+h2 {
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 25px;
+  }
+
+p {
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+    margin: 2%;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 15px;
+  }
